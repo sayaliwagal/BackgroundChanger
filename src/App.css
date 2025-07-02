@@ -1,0 +1,31 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+}
+.btnGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 5px; 
+}
+.btn  {
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #bbb7b7;
+    color: #2c2b2b;
+    font-size: 18px;
+    font-weight: 700;
+    flex: 0 0 calc(25.333% - 5px); /* 100% / 3 = 33.333%, then subtract gap for correct sizing */
+    max-width: calc(25.333% - 5px);
+}
